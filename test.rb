@@ -2,12 +2,16 @@
 #If I specify a valid amount of currency, the item is added to a list, and it updates the subtotal
 #If I specify an invalid amount of currency, the item is not added to the list, and the subtotal is unaffected
 
-#sales_price = ""
+#sales_price = 
+
+require 'pry'
 
 array = []
 transaction_time = Time.now
 
 while true
+
+  binding.pry
     puts "What is the sales price"
     
     sales_price = gets.chomp
