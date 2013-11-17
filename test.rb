@@ -1,29 +1,29 @@
 #I am prompted to enter a sale price for an item
 #If I specify a valid amount of currency, the item is added to a list, and it updates the subtotal
 #If I specify an invalid amount of currency, the item is not added to the list, and the subtotal is unaffected
-
-#sales_price = 
-
 require 'pry'
 
 array = []
 transaction_time = Time.now
-
+#binding.pry
 while true
 
-  binding.pry
+  
     puts "What is the sales price"
     
-    sales_price = gets.chomp
-    sales_price2 = sales_price.to_f
+
+
+    inout_f = gets.chomp
     
-    array << sales_price2 if sales_price2 > 0
     
-    subtotal = array.inject(0) { |result, element| result + element }
+    
     puts "Your subtotal is $#{subtotal}"
 
+  inout_s = gets.chomp
+  array << sales_price2 if sales_price2 > 0
+    subtotal = array.inject(0) { |result, element| result + element }
 
-  if sales_price.downcase == "done"    
+  if inout_s.downcase == "done"    
     puts "Here are your items prices"
     puts array
     puts "Total amout due is $#{subtotal}"
@@ -32,9 +32,28 @@ while true
     change_due = amount_tendered - subtotal
   
 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   if amount_tendered < subtotal
   still_due = subtotal - amount_tendered
-  puts "Insufficient amount! Customer still owes $" + still_due.to_s + " shoot him!"
+  puts "Insufficient amount! Customer still owes $" + still_due.to_s + " - SHOOT HIM!"
 
   else  amount_tendered > 0
   puts 'Here is your change'

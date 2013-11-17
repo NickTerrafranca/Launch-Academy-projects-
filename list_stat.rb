@@ -1,7 +1,4 @@
 #Write a program that reports the average score, the lowest score, and the highest score. 
-
-
-
 array = [75, 100, 85, 65, 84, 87, 95]
 sum = 0
 array.each { |a| sum += a }
@@ -16,5 +13,3 @@ len = array.length
 average = sum.to_f / len 
 puts average
 
-
-#======================================================================================
