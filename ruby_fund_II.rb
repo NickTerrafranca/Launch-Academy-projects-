@@ -14,7 +14,7 @@ while true
     sales_price = gets.chomp
     sales_price2 = sales_price.to_f
     
-    array << sales_price2 if sales_price2 > 0
+    array << sales_price2 if sales_price2 > 0 ||
     
     subtotal = array.inject(0) { |result, element| result + element }
     puts "Your subtotal is $#{subtotal}"
