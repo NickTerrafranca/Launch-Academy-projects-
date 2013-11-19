@@ -9,15 +9,15 @@ transaction_time = Time.now
 while true
 
   
-    puts "What is the sales price"
-    
-    sales_price = gets.chomp
-    sales_price2 = sales_price.to_f
-    
-    array << sales_price2 if sales_price2 > 0 ||
-    
-    subtotal = array.inject(0) { |result, element| result + element }
-    puts "Your subtotal is $#{subtotal}"
+  puts "What is the sales price"
+  
+  sales_price = gets.chomp
+  sales_price2 = sales_price.to_f
+  
+  array << sales_price2 if sales_price2 > 0 ||
+  
+  subtotal = array.inject(0) { |result, element| result + element }
+  puts "Your subtotal is $#{subtotal}"
 
 
   if sales_price.downcase == "done"    
@@ -27,17 +27,17 @@ while true
     puts "Amout tendered?"
     amount_tendered = gets.chomp.to_i
     change_due = amount_tendered - subtotal
-  
+    
 
-  if amount_tendered < subtotal
-  still_due = subtotal - amount_tendered
-  puts "Insufficient amount! Customer still owes $" + still_due.to_s + " - SHOOT HIM!"
+    if amount_tendered < subtotal
+      still_due = subtotal - amount_tendered
+      puts "Insufficient amount! Customer still owes $" + still_due.to_s + " - SHOOT HIM!"
 
-  else  amount_tendered > 0
-  puts 'Here is your change'
-  puts change_due
-  puts transaction_time
-  end
+    else  amount_tendered > 0
+      puts 'Here is your change'
+      puts change_due
+      puts transaction_time
+    end
 
     break
   end
