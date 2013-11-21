@@ -3,12 +3,6 @@ word_counts = {
   "jumped" => 1, "over" => 1, "lazy" => 1, "dog" => 1
 }
 
-common_words = {}
-
 word_counts.each do |word, count|
-  if count > 1
-    common_words[word] = count
-  end
+  puts "#{word} appeared #{count} time(s)."
 end
-
-puts common_words.inspect # Outputs {"the"=>2}
