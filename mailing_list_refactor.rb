@@ -14,8 +14,7 @@ person[:salutations] = salutations[index]
 person[:firstname] = first_names[index]
 person[:last_name] = last_names[index]
 person[:address] = addresses[index]
- puts "#{:salutations[index] :first_names[index}: "
-
+ puts "#{contact[:salutation]} #{contact[:first_name]} #{contact[:last_name]}\n#{contact[:address]}"
  address_list << person
 
 

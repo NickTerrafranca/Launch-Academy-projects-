@@ -1,0 +1,8 @@
+
+sku,    name,         retail,   wholesale
+12345,  coffee_a,     5,        2.5
+23456,  coffee_b,     7.5,      5
+34567,  coffee_c,     10,       7.5
+45678,  coffee_d,     12.5,     10
+56789,  coffee_e,     15,       12.5
+67890,  coffee_f,     17.5,     15

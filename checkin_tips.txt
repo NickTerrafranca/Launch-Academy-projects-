@@ -1,0 +1,28 @@
+phase 1
+
+- gets
+- puts
+
+String methods
+- chomp
+
+phase 2
+
+no additional methods
+
+phase 3
+
+Array methods (not all may be necessary)
+- length
+- each
+- each_with_index
+
+phase 4
+
+File methods
+- read
+- exists?
+
+String methods
+- split # OR
+- lines

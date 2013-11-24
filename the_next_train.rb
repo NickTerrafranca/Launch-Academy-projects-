@@ -1,4 +1,7 @@
-require 'pry'
+#Note that I have not yet worked out the extra challange part commented out at bottom
+
+
+#require 'pry'
 
 train_schedule = {train1: 2, 
                   train2: 5, 
@@ -14,16 +17,20 @@ train_schedule = {train1: 2,
                   train12: 19, 
                   train13: 24}
 
+
+
+
+
 train_numbers = []
 train_times = []
 
 print "What time fo you want to leave?"
 input_time_leaving = gets.chomp.to_f
-train_schedule.each do |key , value|
+train_schedule.each do |train_num , depart_time|
   #last_train = train_schedule.last
- if input_time_leaving < value
-  train_numbers << key
-  train_times << value
+ if input_time_leaving < depart_time
+  train_numbers << train_num
+  train_times << depart_time
   
   end
 
