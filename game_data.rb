@@ -6,7 +6,8 @@
 #2. Colts, 8 wins, 8 losses
 #3. Broncos, 4 wins, 12 losses
 #4. Steelers, 2 wins, 14 losses
-#Calculate the leaderboard in the following format (data is exaggerated, but the Patriots are on top!) 
+#Calculate the leaderboard in the following format 
+#(data is exaggerated, but the Patriots are on top!) 
 [
   {
     home_team: "Patriots",
